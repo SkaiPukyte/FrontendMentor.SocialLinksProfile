@@ -1,0 +1,126 @@
+/* Basic reset for margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set basic styles for HTML and Body */
+  html, body {
+    font-size: 14px;
+    font-family: Inter, sans-serif;
+    color: #fff;
+    background-color:#141414;
+    margin: 3vh;
+    padding: 8vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Removes default body margin */
+    text-align: center; /* Centers inline text elements */
+    font-weight: 400;
+
+  }
+  
+  /* Container for main content */
+  .container {
+    max-width: 380px;
+    margin: auto;
+    padding: 30px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    }
+
+   
+  
+  /* Basic styles for headings */
+  h1 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    margin:  auto;
+    padding: 10px;
+    font-size: 1.8rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    margin:  auto;
+    padding: 10px;
+    padding-top: 0;
+      }
+.description{
+ margin: 20px;   
+}
+.location{
+    color: hsl(75, 94%, 57%);  
+    font-weight: 700; 
+}
+ 
+  /* Basic link styles */
+  a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Image responsive */
+  img {
+    width: 30%;
+    max-width: 50%;
+    height: auto;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  
+  /* Basic Button styles */
+  button {
+    display: block;
+    width: 100%;
+    padding: 16px 16px;
+    border-radius: 10px;
+    background-color: #333333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    border: none;
+    font-family: Inter, sans-serif;
+  }
+  .social-links button:not(:first-child) {
+    margin-top: 15px; 
+  }
+  
+  button:hover {
+    background-color: hsl(75, 94%, 57%);
+  }
+  
+  /* Simple footer styling */
+  footer {
+    padding: 1rem 0;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+    margin-top: 2rem;
+  }
+  
+/* Adjust layout for smaller screens */
+@media (max-width: 600px) {
+  body {
+    padding: 0.5vh 0.5vw; /* smaller padding for mobile */
+  }
+
+  .container {
+    width: 95%; /* slightly wider container on mobile */
+    max-width: none; 
+  }
+
+  img {
+    max-width: 100%; /* full-width images on mobile */
+  }
+}
